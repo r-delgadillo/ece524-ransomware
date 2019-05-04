@@ -3,6 +3,11 @@ const path = require('path');
 
 const app = express();
 
+app.get('/download', function (req, res) {
+    var file = path.resolve(__dirname, '..', 'src/Ransomware.txt');
+    res.download(file); // Set disposition and send it.
+});
+
 // Serve the static files from the React app
 app.use(express.static(path.resolve(__dirname, '..', 'build')));
 

@@ -24,6 +24,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "shards-react": "^1.0.3"
   }
 }
